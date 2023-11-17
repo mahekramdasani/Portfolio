@@ -12,6 +12,7 @@
 
 # Ignore node_modules/ directory for Node.js projects
 /Frontend/node_modules/
+/Backend/node_modules/
 
 
 # Ignore .env files containing sensitive information

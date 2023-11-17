@@ -1,3 +1,11 @@
+//Home Page imports
+import {HiOutlineMail} from 'react-icons/hi'
+import {LiaLinkedin} from 'react-icons/lia'
+import {AiFillGithub} from 'react-icons/ai'
+import {GrInstagram} from 'react-icons/gr'
+import {SiLeetcode} from 'react-icons/si'
+import { FaWhatsapp } from "react-icons/fa";
+
 // About Page imports
 import { FaGraduationCap,FaLaptop } from "react-icons/fa";
 import { MdOutlineRocketLaunch } from "react-icons/md";
@@ -28,7 +36,6 @@ import Sci from "../images/skills/sci.png"
 import Seaborn from "../images/skills/seaborn.png"
 import Sqlite from "../images/skills/sqlite.png"
 
-
 import DsAnalysis from "../images/certificates/analysis.png"
 import Cfor from "../images/certificates/C.png"
 import Datas from "../images/certificates/datas.png"
@@ -57,6 +64,36 @@ import movie from "../images/Projects/movie.jpg"
 import port from "../images/Projects/port.png"
 import spa from "../images/Projects/spa.avif"
 import trend from "../images/Projects/trend.jpg"
+
+//Home and Contact
+
+export const socialLinks = [
+  {
+    link: 'mailto:mahekramdasani@gmail.com',
+    icon: <HiOutlineMail className='icon' />,
+  },
+  {
+    link: 'https://api.whatsapp.com/send?phone=919879508137',
+    icon: <FaWhatsapp className='icon' />,
+  },
+  {
+    link: 'https://www.linkedin.com/in/mahek-ramdasani-b57398226/',
+    icon: <LiaLinkedin className='icon' />,
+  },
+  {
+    link: 'https://github.com/mahekramdasani',
+    icon: <AiFillGithub className='icon' />,
+  },
+  {
+    link: 'https://www.instagram.com/mahek__ramdasani',
+    icon: <GrInstagram className='icon' />,
+  },
+  {
+    link: 'https://leetcode.com/mahekramdasani/',
+    icon: <SiLeetcode className='icon' />,
+  },
+];
+
 
 //About Page Data
 export const about_data = [

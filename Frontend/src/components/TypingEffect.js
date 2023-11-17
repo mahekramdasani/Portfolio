@@ -56,7 +56,7 @@ const TypingEffect = () => {
     <div className='type'>
         {/* <h1>&nbsp;Hello!<PiHandWavingFill/>My Name is</h1> */}
         <h1 className='name'>&nbsp;Mahek Ramdasani</h1>
-      <h1>&nbsp;{text}</h1>
+      <h3>&nbsp;{text}</h3>
     </div>
   );
 };

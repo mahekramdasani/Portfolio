@@ -4,7 +4,7 @@ import { projects } from '../components/data'
 import { Row,Col } from 'react-bootstrap'
 const Projects = () => {
   return (
-    <>
+    <div className='project'>
     <h2 className='text-center'>Projects</h2>
     <div className='projects'>
       <Row>
@@ -18,7 +18,7 @@ const Projects = () => {
       }
       </Row>
     </div>
-    </>
+    </div>
   )
 }
 
