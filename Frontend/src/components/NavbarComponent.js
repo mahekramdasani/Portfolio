@@ -2,31 +2,13 @@ import React from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { createBrowserHistory } from "history";
-
+import logo from "../images/maheklogo.png"
 const history = createBrowserHistory();
 
 const NavbarComponent = () => {
   const navigateAndReload = (path) => {
     history.push(path);
     window.location.reload();
-  };
-  const handleDownload = () => {
-    const fileURL = 'https://drive.google.com/file/d/1j1X5BKSAWW6IOXoZ42KLt5g1iloUPSNo/view'; 
-
-// Create a link to download
-const link = document.createElement('a');
-link.href = fileURL;
-link.setAttribute('download', 'MahekRamdasani_Resume.pdf');
-
-// Append to the HTML body
-document.body.appendChild(link);
-
-// Start the download
-link.click();
-
-// Clean up and remove the link
-link.parentNode.removeChild(link);
-
   };
   return (
     <>
@@ -35,7 +17,7 @@ link.parentNode.removeChild(link);
           {window.location.pathname === "/" ? (
             <></>
           ) : (
-            <Navbar.Brand href="/">Mahek Ramdasani</Navbar.Brand>
+            <Navbar.Brand href="/"><img src={logo} width="120px"/></Navbar.Brand>
           )}
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -82,7 +64,7 @@ link.parentNode.removeChild(link);
 </Nav.Link> */}
             </Nav>
           <a
-  href="https://drive.google.com/file/d/1j1X5BKSAWW6IOXoZ42KLt5g1iloUPSNo/view"
+  href="https://drive.google.com/file/d/1jjaUF5Kti-CjmbfdqQysVHhKWhBozStw/view"
   target="_blank"
   rel="noopener noreferrer" className="transparent-button">Resume</a>
 

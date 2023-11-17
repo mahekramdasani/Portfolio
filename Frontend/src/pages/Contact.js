@@ -23,6 +23,7 @@ const Contact = () => {
       // Send form data to the backend
       const response = await axios.post('http://localhost:3001/send-email', formData);
       console.log(response.data); // Log the response from the backend
+      alert("Mail Sent Successfully")
 
       // You can handle success or show a confirmation message to the user
     } catch (error) {

@@ -174,4 +174,9 @@ body::before {
   background-color: aqua;
 }
 
-/* Optional: Add more styling for responsiveness or additional visual enhancements */
+.footer{
+  background-color: transparent !important;
+}
+.footer a{
+  color:aqua !important;
+}

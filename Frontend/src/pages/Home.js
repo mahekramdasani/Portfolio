@@ -1,6 +1,5 @@
 import React from 'react'
 import { socialLinks } from '../components/data'
-import bg from '../images/bg.avif'
 const Home = () => {
   return (
     <div className='home'>

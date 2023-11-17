@@ -12,6 +12,7 @@ import Contact from "./pages/Contact";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import TypingEffect from "./components/TypingEffect";
+import { Footer } from "./components/Footer";
 // import { ThemeProvider } from './components/ThemeContext';
 function App() {
   const currentPath = window.location.pathname;
@@ -35,6 +36,7 @@ function App() {
           <Route path="/projects" element={<Projects />} />
         </Routes>
       </BrowserRouter>
+      <Footer/>
     </>
   );
 }
