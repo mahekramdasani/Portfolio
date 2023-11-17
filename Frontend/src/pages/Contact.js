@@ -77,7 +77,9 @@ const Contact = () => {
         <textarea name="message" value={formData.message} onChange={handleChange} />
       </label>
       <br />
+      <div className='centered-button'>
       <button type="submit">Send Message</button>
+      </div>
     </form>
     </Col>
     </Row>
