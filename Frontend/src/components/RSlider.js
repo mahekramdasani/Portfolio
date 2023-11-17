@@ -6,7 +6,7 @@ const RSlider = () => {
     dots: true,
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 4000,
     pauseOnHover: true,
@@ -16,7 +16,7 @@ const RSlider = () => {
           breakpoint: 600,
           settings: {
             slidesToShow: 2,
-            slidesToScroll: 2,
+            slidesToScroll: 1,
             initialSlide: 2
           }
         },
@@ -28,22 +28,6 @@ const RSlider = () => {
           }
         }
       ],
-    appendDots: (dots) => (
-      <div>
-        <ul style={{ margin: "0px" }}> {dots} </ul>
-      </div>
-    ),
-    customPaging: (i) => (
-      <div
-        style={{
-          width: "5px",
-          height: "5px",
-          backgroundColor: "white",
-          borderRadius: "50%",
-          border: "1px solid #007BFF",
-        }}
-      ></div>
-    ),
     
   };
   return (

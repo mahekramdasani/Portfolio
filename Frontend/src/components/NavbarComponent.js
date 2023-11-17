@@ -1,4 +1,4 @@
-import React from "react";
+import {React,useState} from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { createBrowserHistory } from "history";
@@ -10,16 +10,21 @@ const NavbarComponent = () => {
     history.push(path);
     window.location.reload();
   };
+  const [isNavExpanded, setIsNavExpanded] = useState(false);
+
+  const handleNavbarToggle = () => {
+    setIsNavExpanded(!isNavExpanded);
+  };
   return (
     <>
-      <Navbar expand="lg" className="w-50">
+      <Navbar expand="lg" className={isNavExpanded ? 'navbar-expanded w-50' : 'navbar-collapsed w-50'}>
         <Container>
           {window.location.pathname === "/" ? (
             <></>
           ) : (
             <Navbar.Brand href="/"><img src={logo} width="120px"/></Navbar.Brand>
           )}
-          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleNavbarToggle}/>
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
               <Nav.Link

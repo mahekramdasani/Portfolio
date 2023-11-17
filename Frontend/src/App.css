@@ -114,11 +114,10 @@ body::before {
   align-items: center;
 }
 .card{
-  height: 510px !important;
+  height: 100% !important;
   width: 100%;
   background-color: transparent !important;
   border: 1px solid white !important;
-  margin: 5px;
 }
 .card img{
   height:250px;
@@ -137,7 +136,9 @@ body::before {
 .projects button:hover{
   background-color: aqua !important;
 }
-
+.projects .col{
+  margin: 15px;
+}
 /* Add this CSS to your stylesheet or in a separate style tag */
 
 .contactForm{
@@ -183,4 +184,22 @@ body::before {
 }
 .footer a{
   color:aqua !important;
+}
+
+.navbar-collapsed .navbar-toggler-icon{
+  background-image: url("./images//toggle.png") !important;
+  height: 20px !important;
+  width: 20px !important;
+  padding-left: 0;
+}
+.navbar-expanded .navbar-toggler-icon{
+  background-image: url("./images//toggle1.png") !important;
+  height: 20px !important;
+  width: 20px !important;
+  padding-left: 0;
+}
+.navbar-toggler{
+  border: 2px solid white !important;
+  transition: 0.8s ease-in-out;
+  
 }
