@@ -25,7 +25,7 @@ I am a dedicated learner, always seeking new challenges and opportunities to enh
 
 ### Project 3: SpaceX
 
-- **Description:** Explored data analysis and machine learning using Python and Jupyter Notebooks.
+- **Description:**  SpaceX,launch site analysis using Python, facilitating in-depth assessment of rocket launch operations and site performance.
 - **GitHub:** [Data Science Repository](https://github.com/mahekramdasani/Python-projects-On-Data-Science/tree/main/SpaceX)
 
 ## 🌱 Open to Collaborate
@@ -38,6 +38,6 @@ Feel free to reach out! I'm open to discussions, collaboration, and networking.
 
 - **Email:** mahekramdasani@gmail.com
 - **LinkedIn:** [Connect with Me](https://www.linkedin.com/in/mahek-ramdasani-b57398226/)
-- **Twitter:** [@yourtwitterhandle](https://twitter.com/mahek_ramdasani)
+- **Twitter:** [@twitterhandle](https://twitter.com/mahek_ramdasani)
 
 Let's code something amazing together! 🚀
