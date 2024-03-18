@@ -1,0 +1,22 @@
+# Ignore compiled files
+*.class
+*.war
+*.jar
+
+# Ignore log files
+*.log
+
+# Ignore build/ and dist/ directories
+/build/
+/dist/
+
+# Ignore node_modules/ directory for Node.js projects
+/Frontend/node_modules/
+/Backend/node_modules/
+
+
+# Ignore .env files containing sensitive information
+.env
+
+# Ignore macOS system files
+.DS_Store
