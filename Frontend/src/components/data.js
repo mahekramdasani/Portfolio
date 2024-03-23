@@ -35,6 +35,8 @@ import React from "../images/skills/react.png"
 import Sci from "../images/skills/sci.png"
 import Seaborn from "../images/skills/seaborn.png"
 import Sqlite from "../images/skills/sqlite.png"
+import Php from "../images/skills/php.png"
+import Flask from "../images/skills/flask.png"
 
 import DsAnalysis from "../images/certificates/analysis.png"
 import Cfor from "../images/certificates/C.png"
@@ -124,29 +126,31 @@ export const about_data = [
 
 //Skills Page Data
 export const skillsArray = [
-{ name: "C", img: C },
-{ name: "Java", img: Java },
-{ name: "Python", img: Python },
-{ name: "JavaScript", img: Js },
-{ name: "Html", img: Html },
-{ name: "Css", img: Css },
-{ name: "Pug", img: Pug },
-{ name: "Bootstrap", img: Bootstrap },
-{ name: "React", img: React },
-{ name: "Django", img: Dj },
-{ name: "MongoDB", img: Mongo },
-{ name: "SQLite", img: Sqlite },
-{ name: "MySQL", img: My },
-{ name: "Oracle", img: Oracle },
-{ name: "Node.js", img: Node },
-{ name: "Express", img: Express },
-{ name: "Firebase", img: Firebase },
-{ name: "OpenCV", img: Opencv },
-{ name: "Pandas", img: Pandas },
-{ name: "SciPy", img: Sci },
-{ name: "Seaborn", img: Seaborn },
-{ name: "Arduino", img: Arduino },
-{ name: "Git", img: Git },
+{ name: "C(){}", img: C },
+{ name: "Java.Class{}", img: Java },
+{ name: "Python:", img: Python },
+{ name: "JS.onclick{}", img: Js },
+{ name: "<HTML/>", img: Html },
+{ name: ".CSS{}", img: Css },
+{ name: "Pug<>", img: Pug },
+{ name: ".Bootstrap{}", img: Bootstrap },
+{ name: "React()</>", img: React },
+{ name: "Dj::Model", img: Dj },
+{name:"Flask@route", img:Flask},
+{name:"<?PHP?>", img:Php},
+{ name: "MongoDB{}->", img: Mongo },
+{ name: "SQLite.db", img: Sqlite },
+{ name: "MySQL->", img: My },
+{ name: "Oracle(DB)", img: Oracle },
+{ name: "Node.js()", img: Node },
+{ name: "Express('/')", img: Express },
+{ name: "Firebase{}", img: Firebase },
+{ name: "OpenCV(Mat)", img: Opencv },
+{ name: "Pandas.df", img: Pandas },
+{ name: "SciPy.func()", img: Sci },
+{ name: "Sns.plot()", img: Seaborn },
+{ name: "Arduino.loop()", img: Arduino },
+{ name: "Git.commit()", img: Git },
 
 ]
 

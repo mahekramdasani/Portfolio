@@ -39,51 +39,39 @@ const Contact = () => {
   };
 
   return (
-    <div className='contact'>
-      <Row>
-        <Col>
-        <h2>Connect with Me:</h2>
-        <h1>
-          <Row>
-      {socialLinks.map((socialLink, index) => (
-  <Col key={index}>
-    <a href={socialLink.link} target='_blank'>{socialLink.icon}</a>
-  </Col>
-))}
-</Row>
-
-      </h1>
-        </Col>
-        <Col>
-      <h2 className='text-center'>Contact Form</h2>
-    <form onSubmit={handleSubmit} className='contactForm'>
-      <label>
-        Name:
-        <input type="text" name="name" value={formData.name} onChange={handleChange} />
-      </label>
-      <br />
-      <label>
-        Email:
-        <input type="email" name="email" value={formData.email} onChange={handleChange} />
-      </label>
-      <br />
-      <label>
-        Subject:
-        <input type="text" name="subject" value={formData.subject} onChange={handleChange} />
-      </label>
-      <br />
-      <label>
-        Message:
-        <textarea name="message" value={formData.message} onChange={handleChange} />
-      </label>
-      <br />
-      <div className='centered-button'>
-      <button type="submit">Send Message</button>
-      </div>
-    </form>
-    </Col>
-    </Row>
+    <div className='contact' style={{ display: 'flex', width: '100%' }}>
+      <Col style={{ width: '75%' }}>
+        <h2 className='text-center' style={{ color: '#00E5E5' }}>Contact Form</h2>
+        <form onSubmit={handleSubmit} className='contactForm'>
+          <div>
+            <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} />
+          </div>
+          <div>
+            <input type="email" name="email" placeholder="Email" value={formData.email} onChange={handleChange} />
+          </div>
+          <div>
+            <input type="text" name="subject" placeholder="Subject" value={formData.subject} onChange={handleChange} />
+          </div>
+          <div>
+            <textarea name="message" placeholder="Message" value={formData.message} onChange={handleChange} />
+          </div>
+          <div className='centered-button'>
+            <button type="submit">Send Message</button>
+          </div>
+        </form>
+      </Col>
+      <Col style={{ width: '25%', color: '#00E5E5' }}>
+        <p>Phone<br /><span style={{ color: 'white' }}>+91 98795 08137</span></p>
+        <p>Email<br /><span style={{ color: 'white' }}>mahekramdasani@gmail.com</span></p>
+        <p>Address<br /><span style={{ color: 'white' }}>Ahmedabad,Gujarat,India</span></p>
+        <p>Socials<br />
+          {socialLinks.map((socialLink, index) => (
+            <a key={index} href={socialLink.link} target='_blank' style={{ color: 'white', marginRight: '10px' }}>{socialLink.icon}</a>
+          ))}
+        </p>
+      </Col>
     </div>
+      
 
   );
 };

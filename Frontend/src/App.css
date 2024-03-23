@@ -100,15 +100,29 @@ color:#00E5E5 !important;
   margin: 0 auto !important;
 }
 .skills .icon{
-  height:50px;
-  width:50px;
+  height:75px;
+  width:75px;
   cursor: pointer;
+}
+.skills .skill-div{
+  background-color: rgb(1, 1, 102) !important;
+  color: #00E5E5;
+  border: 10px solid grey;
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 10px;
 }
 .skills .col-md-2{
   padding: 10px;
 }
 .certificates img{
-  height: 220px;
+  height: 75%;
   width: 100%;
 }
 .certificates{
@@ -142,7 +156,7 @@ color:#00E5E5 !important;
 }
 .card{
   height: 100% !important;
-  width: 100%;
+  width: 100% !important;
   background-color: transparent !important;
   border: 1px solid white !important;
 }
@@ -164,10 +178,9 @@ color:#00E5E5 !important;
   background-color: #00E5E5 !important;
 }
 .projects .col{
-  margin: 15px;
+  margin-bottom: 10px !important;
 }
 /* Add this CSS to your stylesheet or in a separate style tag */
-
 .contactForm{
   max-width: 400px;
   margin: 0 auto;
@@ -229,4 +242,42 @@ color:#00E5E5 !important;
   border: 2px solid white !important;
   transition: 0.8s ease-in-out;
   
+}
+
+.contact input[type="text"],
+.contact input[type="email"],
+.contact textarea {
+  width: 100% !important;
+  padding: 8px !important;
+  margin-bottom: 16px !important;
+  border: none !important;
+  border-bottom: 2px solid #00E5E5 !important;
+  background-color: transparent !important;
+  color: #00E5E5 !important;
+  outline: none !important;
+  border-radius: 0 !important; /* To override the .contactForm input, textarea styles */
+}
+.contact form{
+  width: 100% !important;
+  height:90% !important;
+}
+.contact button[type="submit"] {
+  background-color: white !important;
+  color: #00E5E5 !important;
+  border: 2px solid #00E5E5 !important;
+  padding: 10px 15px !important;
+  cursor: pointer !important;
+  transition: background-color 0.8s ease-in-out !important;
+}
+
+.contact button[type="submit"]:hover {
+  background-color: #00E5E5 !important;
+  color: white !important;
+}
+
+.contact .centered-button {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
 }

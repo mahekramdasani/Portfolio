@@ -11,19 +11,15 @@ const Skills = () => {
 
       <div className="skills">
         <Row>
-        <h3 className="text-center">Skills</h3>
-      {skillsArray.map((skill) => (
-        <Col md={2} key={skill.name} className="d-flex justify-content-center align-items-center">
-          <OverlayTrigger
-            placement="bottom"
-            delay={{ show: 250, hide: 400 }}
-            overlay={renderTooltip(skill.name)}
-          >
-            <img src={skill.img} className="icon" alt={skill.name}/>
-          </OverlayTrigger>
-        </Col>
-))}
-</Row>
+          <h2 className="text-center">Skills</h2>
+          {skillsArray.map((skill) => (
+            <Col xs={6} sm={4} md={3} key={skill.name} className="d-flex justify-content-center align-items-center">
+              <div className="skill-div">
+                {skill.name}
+              </div>
+            </Col>
+          ))}
+        </Row>
       <div class="certification">
         <RSlider/>
       </div>

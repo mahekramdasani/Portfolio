@@ -7,14 +7,13 @@ const Projects = () => {
     <div className='project'>
     <h2 className='text-center'>Projects</h2>
     <div className='projects'>
-      <Row>
+      <Row xs={1} md={2}>
       {
-        projects.map((project)=>{
-          return(
-            <Col>
-          <MyCard name={project.name} imageUrl={project.img} description={project.value} link={project.link}/>
-          </Col>
-        )})
+        projects.map((project, index) => (
+            <Col key={index}>
+              <MyCard name={project.name} imageUrl={project.img} description={project.value} link={project.link}/>
+            </Col>
+        ))
       }
       </Row>
     </div>
