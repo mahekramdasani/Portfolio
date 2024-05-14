@@ -59,6 +59,9 @@ import Visual from "../images/certificates/visual.png"
 //Projects page import
 
 import dog from "../images/Projects/dog.jpg"
+import tune from "../images/Projects/tune.png"
+import book from "../images/Projects/book.jpeg"
+import maze from "../images/Projects/maze.jpg"
 import esc from "../images/Projects/esc.jpg"
 import exp from "../images/Projects/exp.jpg"
 import flight from "../images/Projects/flight.jpg"
@@ -178,6 +181,18 @@ export const certificatesArray = [
 
 export const projects = [
   {
+    name:"TuneTrek",
+    value:"Tune Trek is a cool music site that gives you recommendations based on what you like.",
+    img:tune,
+    link:"https://github.com/mahekramdasani/TuneTrek"
+  },
+  {
+    name:"BookBreeze",
+    value:"Bookbreeze is a library system that helps manage everything smoothly for librarians and makes things easier for library users.",
+    img:book,
+    link:"https://github.com/mahekramdasani/BookBreeze"
+  },
+  {
     name: 'DoggyDiveIn',
     value: 'DoggyDiveIn, a user-friendly website for dog lovers, showcasing full ownership and hands-on development expertise.',
     img: dog, // Add the image URL
@@ -188,24 +203,6 @@ export const projects = [
     value: 'TrendyBytes, a captivating blog website, featuring a Django backend and React frontend, highlighting my proficiency in web development, content management, and design.',
     img: trend, // Add the image URL
     link: 'https://github.com/mahekramdasani/blog-website', // Add the project link
-  },
-  {
-    name: 'Expense Tracker',
-    value: 'A user-friendly Expense Tracker application, streamlining personal finance management and enhancing financial tracking capabilities.',
-    img: exp, // Add the image URL
-    link: 'https://github.com/mahekramdasani/expensetracker', // Add the project link
-  },
-  {
-    name: 'Portfolio Website',
-    value: 'Personal portfolio website showcasing my skills and projects. Built with modern web technologies to create a visually appealing and informative platform for visitors.',
-    img: port, // Add the image URL
-    link: 'https://github.com/mahekramdasani/Portfolio', // Add the project link
-  },
-  {
-    name: 'Flight Analysis',
-    value: 'Comprehensive flight analysis using Python, leveraging data analytics and visualization to gain valuable insights into aviation trends and performance.',
-    img: flight, // Add the image URL
-    link: 'https://github.com/mahekramdasani/Python-projects-On-Data-Science/tree/main', // Add the project link
   },
   {
     name: 'SpaceX',
@@ -220,11 +217,36 @@ export const projects = [
     link: 'https://github.com/mahekramdasani/Cinemate', // Add the project link
   },
   {
+    name:"Maze-Craze",
+    value:"A simple Java application demonstrating maze-solving algorithm using depth-first search (DFS) with graphical user interface (GUI) using Java Swing",
+    img:maze,
+    link:'https://github.com/mahekramdasani/MazeGenerationAndSolver'
+  },
+  {
+    name: 'Expense Tracker',
+    value: 'A user-friendly Expense Tracker application, streamlining personal finance management and enhancing financial tracking capabilities.',
+    img: exp, // Add the image URL
+    link: 'https://github.com/mahekramdasani/expensetracker', // Add the project link
+  },
+  {
+    name: 'Flight Analysis',
+    value: 'Comprehensive flight analysis using Python, leveraging data analytics and visualization to gain valuable insights into aviation trends and performance.',
+    img: flight, // Add the image URL
+    link: 'https://github.com/mahekramdasani/Python-projects-On-Data-Science/tree/main', // Add the project link
+  },
+  {
     name: 'EscapeHomes',
     value: 'Escape Homes, a tourism website exclusively dedicated to promoting and showcasing the captivating beauty of Gujarat, fostering tourism and cultural appreciation.',
     img: esc, // Add the image URL
     link: 'https://github.com/mahekramdasani/tourismwebite', // Add the project link
   },
+  {
+    name: 'Portfolio Website',
+    value: 'Personal portfolio website showcasing my skills and projects. Built with modern web technologies to create a visually appealing and informative platform for visitors.',
+    img: port, // Add the image URL
+    link: 'https://github.com/mahekramdasani/Portfolio', // Add the project link
+  },
+  
 ];
 
 export const workData = [
@@ -235,8 +257,8 @@ export const workData = [
         description: "As a Technology Intern at an EXIM business, I managed Excel data files of exports by creating CTL (Clean Transform Load) files using Python within Flask and React environments. Upon completion, I transitioned into the role of Compliance Main Lead, where I led a team in scraping data from official websites for our compliance tool. Additionally, I collaborated on developing the main website, Origin Konnect, using PHP. My contributions included implementing data analytics features, custom CSS, and analytics integration. I also played a key role in converting the Clean Transformed files to SQL and uploading them to the server, enhancing the site's functionality and data management.",
         skills:["Python", "Flask", "React", "PHP", "JavaScript", "SQL", "Excel", "Data Analytics", "Web Scraping", "Data Management", "Leadership"],
         link:"https://originkonnect.in/",
-        joinDate:"January 2024",
-        current:"Yes",
-        endDate:null
+        joinDate:"JAN 2024",
+        current:"No",
+        endDate:"APR 2024"
     },
 ]

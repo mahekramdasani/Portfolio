@@ -71,7 +71,7 @@ const NavbarComponent = () => {
               
             </Nav>
           <a
-  href="https://drive.google.com/file/d/1jjaUF5Kti-CjmbfdqQysVHhKWhBozStw/view"
+  href="https://drive.google.com/file/d/1kRuw0Ee0CrFrkC-RcSsA8QPF0bJDiLOh/view"
   target="_blank"
   rel="noopener noreferrer" className="transparent-button">Resume</a>
 

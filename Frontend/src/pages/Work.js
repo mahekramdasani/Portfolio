@@ -18,7 +18,7 @@ const Work = () => {
               <p><FaLaptopCode className='icon'/> {work.role}</p>
             </Col>
             <Col>
-              <p className='text-end'>{work.joinDate} - {work.current ? 'Present' : work.endDate}</p>
+              <p className='text-end'>{work.joinDate} - {work.current==="YES" ? 'Present' : work.endDate}</p>
             </Col>
           </Row>
           <p>{work.description}</p>
