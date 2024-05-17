@@ -16,33 +16,12 @@ const Contact = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-
-    try {
-      // Send form data to the backend
-      const response = await axios.post('http://localhost:3001/send-email', formData);
-      console.log(response.data); // Log the response from the backend
-      alert("Mail Sent Successfully")
-
-      // You can handle success or show a confirmation message to the user
-    } catch (error) {
-      console.error('Error submitting the form:', error);
-      // Handle errors or show an error message to the user
-    }
-    setFormData({
-      name: '',
-    email: '',
-    subject: '',
-    message: '',
-  })
-  };
 
   return (
     <div className='contact' style={{ display: 'flex', width: '100%' }}>
       <Col style={{ width: '75%' }}>
         <h2 className='text-center' style={{ color: '#00E5E5' }}>Contact Form</h2>
-        <form onSubmit={handleSubmit} className='contactForm'>
+        <form action= "https://formsubmit.co/mahekramdasani@gmail.com" className='contactForm' method='post'>
           <div>
             <input type="text" name="name" placeholder="Name" value={formData.name} onChange={handleChange} />
           </div>
