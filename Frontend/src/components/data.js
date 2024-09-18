@@ -7,7 +7,7 @@ import {SiLeetcode} from 'react-icons/si'
 import { FaWhatsapp } from "react-icons/fa";
 
 // About Page imports
-import { FaGraduationCap,FaLaptop } from "react-icons/fa";
+import { FaGraduationCap,FaLaptop,FaCode } from "react-icons/fa";
 import { MdOutlineRocketLaunch } from "react-icons/md";
 
 
@@ -54,7 +54,9 @@ import SQL from "../images/certificates/sql.png"
 import SQlds from "../images/certificates/sqlds.png"
 import Tools from "../images/certificates/tools.png"
 import Visual from "../images/certificates/visual.png"
-
+import TC from "../images/certificates/tata-crucible.jpg"
+import Flipkart from "../images/certificates/flipkart.jpg"
+import Myntra from "../images/certificates/myntra.jpg"
 
 //Projects page import
 
@@ -72,7 +74,7 @@ import trend from "../images/Projects/trend.jpg"
 
 //Work page import
 import ok from "../images/work/OK.png"
-
+import aktiv from "../images/work/aktiv.png"
 //Home 
 
 export const socialLinks = [
@@ -103,29 +105,30 @@ export const socialLinks = [
 ];
 
 
-//About Page Data
+
 export const about_data = [
   {
-    name: "Me?",
-    value: "Hi there! 👋 I'm Mahek Ramdasani, A third-year Computer Science student with a passion for Java Development, Full-Stack Development, and Data Science.",
-    icon: null, // Add the corresponding icon here
+    name: "Who Am I?",
+    value: "Hi there! 👋 I'm Mahek Ramdasani, a motivated third-year Computer Engineering student with a strong focus on ERP systems, Java Development, Full-Stack Web Development, and Data Science. I love applying my skills to real-world challenges!",
+    icon: <FaCode />, // Icon representing a developer
   },
   {
     name: "Academic Explorer",
-    value: "Currently pursuing my Bachelor's in Computer Science, I'm dedicated to learning and adapting to new challenges in the ever-evolving tech landscape.",
-    icon: <FaGraduationCap/>, // Add the corresponding icon here
+    value: "Pursuing my Bachelor's in Computer Engineering at LJ University, I’m committed to mastering new technologies and adapting to the rapidly evolving tech world. My academic performance, with a SPI of 9.48, reflects my dedication to learning.",
+    icon: <FaGraduationCap />, // Icon for academic achievements
   },
   {
     name: "Tech Enthusiast",
-    value: "I thrive on Java Development and love exploring the realms of Full-Stack Development and Data Science. Always eager to apply my skills to innovative projects!",
-    icon: <FaLaptop/>, // Add the corresponding icon here
+    value: "From building music recommendation platforms to developing library management systems and tech blogs, I am always excited about Java, Full-Stack Development, Python, and Data Science. Every project helps me push my technical boundaries.",
+    icon: <FaLaptop />, // Icon for technology and development
   },
   {
     name: "Future Collaborator",
-    value: "Excited to contribute my knowledge and enthusiasm to collaborative projects. I'm on the lookout for opportunities to work with professionals in this dynamic field.",
-    icon: <MdOutlineRocketLaunch/>, // Add the corresponding icon here
+    value: "I’m eager to contribute my skills to innovative, collaborative projects. With experience in internships at Aktiv Software and Origin Konnect, I’m actively looking for opportunities to work with industry professionals on impactful tech solutions.",
+    icon: <MdOutlineRocketLaunch />, // Icon symbolizing growth and future aspirations
   },
 ];
+
 
 //Skills Page Data
 export const skillsArray = [
@@ -158,6 +161,9 @@ export const skillsArray = [
 ]
 
 export const certificatesArray = [
+    {name: "TATA Crucible Campus Quiz 2024",img: TC},
+    {name: "Flipkart GRiD 6.0 - Software Development Track",img: Flipkart},
+    {name: "Myntra HackerRamp: WeForShe 2024",img: Myntra},
     { name: "C For Everyone", img: Cfor },
     { name: "Data Structures", img: DS },
     { name: "HTML,CSS and JavaSript for Web Developers", img: HCJ },
@@ -250,15 +256,26 @@ export const projects = [
 ];
 
 export const workData = [
-    {
-        name: "Origin Konnect",
-        img: ok,
-        role:"Technology Intern",
-        description: "As a Technology Intern at an EXIM business, I managed Excel data files of exports by creating CTL (Clean Transform Load) files using Python within Flask and React environments. Upon completion, I transitioned into the role of Compliance Main Lead, where I led a team in scraping data from official websites for our compliance tool. Additionally, I collaborated on developing the main website, Origin Konnect, using PHP. My contributions included implementing data analytics features, custom CSS, and analytics integration. I also played a key role in converting the Clean Transformed files to SQL and uploading them to the server, enhancing the site's functionality and data management.",
-        skills:["Python", "Flask", "React", "PHP", "JavaScript", "SQL", "Excel", "Data Analytics", "Web Scraping", "Data Management", "Leadership"],
-        link:"https://originkonnect.in/",
-        joinDate:"JAN 2024",
-        current:"No",
-        endDate:"APR 2024"
-    },
-]
+  {
+    name: "Aktiv Software",
+    img: aktiv, // Add relevant image for Aktiv Software
+    role: "Software Engineer Intern",
+    description: "Acquired in-depth training in Odoo and Python, leveraging this knowledge in real-world applications to improve ERP system efficiency. Enhanced analytical and technical skills by working on Odoo applications and Python programming.",
+    skills: ["Odoo", "Python", "ERP Systems", "XML", "Problem-Solving"],
+    link: "https://aktivsoftware.com/",
+    joinDate: "JUN 2024",
+    current: "YES"
+},
+  {
+      name: "Origin Konnect",
+      img: ok,
+      role: "Technology Intern",
+      description: "Led a compliance team in managing export data using Flask and React, implementing data scraping solutions that enhanced company growth by one-third. Collaborated with mentors to improve data analytics performance and website functionality in a month by developing data solutions using PHP. Managed export data and converted CTL files to SQL for server uploads.",
+      skills: ["Python", "Flask", "React", "PHP", "JavaScript", "SQL", "Web Scraping", "Data Analytics", "Leadership"],
+      link: "https://originkonnect.in/",
+      joinDate: "JAN 2024",
+      current: "No",
+      endDate: "APR 2024"
+  },
+  
+];

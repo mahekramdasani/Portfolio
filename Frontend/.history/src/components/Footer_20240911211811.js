@@ -4,7 +4,7 @@ export const Footer = () => {
   return (
     <div className="footer">
       <footer
-        class="text-light mt-4"
+        class="text-center text-light mt-4"
       >
         <div class="text-center p-4">
           Made with ❤

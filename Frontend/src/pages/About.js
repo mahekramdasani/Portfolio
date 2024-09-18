@@ -6,10 +6,11 @@ const About = () => {
   return (
     <>
       <div className="p-5 about">
-        <Row>
-          <h2 className="text-center">
+        <h2 className="text-center">
             <span>Code Enthusiast:</span> Simple, Strong, and Curious
           </h2>
+        <Row>
+          
           <Col md={8}>
             {about_data.map((data) => {
               return (

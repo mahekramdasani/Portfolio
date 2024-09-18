@@ -27,7 +27,6 @@ function App() {
         ) : (
           <></>
         )}
-        {/* <Header /> */}
         <NavbarComponent />
         <Routes>
           <Route path="/" element={<Home />} />

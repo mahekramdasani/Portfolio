@@ -1,4 +1,4 @@
-import {React,useState} from "react";
+import { React, useState } from "react";
 import { Navbar, Nav, Container, Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { createBrowserHistory } from "history";
@@ -22,58 +22,66 @@ const NavbarComponent = () => {
           {window.location.pathname === "/" ? (
             <></>
           ) : (
-            <Navbar.Brand href="/"><img src={logo} width="120px"/></Navbar.Brand>
+            <Navbar.Brand href="/"><img src={logo} width="120px" /></Navbar.Brand>
           )}
-          <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleNavbarToggle}/>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={handleNavbarToggle} />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="mr-auto">
-            <Nav.Link
-                as={NavLink}
-                to="/about"
-                activeClassName="active"
-                onClick={() => navigateAndReload("/about")}
-              >
-                About Me
-              </Nav.Link>
-            <Nav.Link
-                as={NavLink}
-                to="/work"
-                activeClassName="active"
-                onClick={() => navigateAndReload("/work")}
-              >
-                Work
-              </Nav.Link>
-              
-              <Nav.Link
-                as={NavLink}
-                to="/skills"
-                activeClassName="active"
-                onClick={() => navigateAndReload("/skills")}
-              >
-                Skills
-              </Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                to="/projects"
-                activeClassName="active"
-                onClick={() => navigateAndReload("/projects")}
-              >
-                Projects
-              </Nav.Link>
-              <Nav.Link
-                as={NavLink}
-                to="/contact"
-                activeClassName="active"
-                onClick={() => navigateAndReload("/contact")}
-              >
-                Contact Me
-              </Nav.Link>
-              
+              <Nav.Item>
+                <Nav.Link
+                  as={NavLink}
+                  to="/about"
+                  activeClassName="active"
+                  onClick={() => navigateAndReload("/about")}
+                >
+                  About Me
+                </Nav.Link></Nav.Item>
+              <Nav.Item>
+                <Nav.Link
+                  as={NavLink}
+                  to="/work"
+                  activeClassName="active"
+                  onClick={() => navigateAndReload("/work")}
+                >
+                  Work
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link
+                  as={NavLink}
+                  to="/skills"
+                  activeClassName="active"
+                  onClick={() => navigateAndReload("/skills")}
+                >
+                  Skills
+                </Nav.Link></Nav.Item>
+              <Nav.Item>
+                <Nav.Link
+                  as={NavLink}
+                  to="/projects"
+                  activeClassName="active"
+                  onClick={() => navigateAndReload("/projects")}
+                >
+                  Projects
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link
+                  as={NavLink}
+                  to="/contact"
+                  activeClassName="active"
+                  onClick={() => navigateAndReload("/contact")}
+                >
+                  Contact Me
+                </Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <a
+                  href="https://drive.google.com/file/d/1CSMLwZDMdqvoscA9yRaJM9Z7fbTvu15n/view"
+                  target="_blank"
+                  rel="noopener noreferrer" className="transparent-button">Resume</a>
+              </Nav.Item>
             </Nav>
-          <a
-  href="https://drive.google.com/file/d/1IzKCqMQN16BEDvcfbSwVfEZNkFlRJ3P1/view?usp=drive_open"
-  target="_blank"
-  rel="noopener noreferrer" className="transparent-button">Resume</a>
 
           </Navbar.Collapse>
         </Container>

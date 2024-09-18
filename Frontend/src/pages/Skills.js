@@ -11,11 +11,12 @@ const Skills = () => {
   return (
     <>
       <div className="skills">
+        <h2 className="text-center">Skills</h2>
+
         <Row>
-          <h2 className="text-center">Skills</h2>
           {skillsArray.map((skill, index) => (
-            <Col xs={12} md={4} key={index} className="mb-3">
-              <div className="d-flex flex-column align-items-center">
+            <Col sm={6} md={4} lg={3} xs={12} key={index} className="outer-div mb-3">
+              <div className="content">
                 <div className="skill-img">
                   <img src={skill.img} alt={skill.name} />
                 </div>
