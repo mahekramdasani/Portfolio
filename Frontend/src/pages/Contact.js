@@ -18,8 +18,8 @@ const Contact = () => {
 
 
   return (
-    <div className='contact'>
-      <Col>
+    <Row className='contact'>
+      <Col lg={6} xs={12}>
         <h2 className='text-center'>Contact Form</h2>
         <form action= "https://formsubmit.co/mahekramdasani@gmail.com" className='contactForm' method='post'>
           <div>
@@ -39,8 +39,10 @@ const Contact = () => {
           </div>
         </form>
         <p className='formsubmit'>*This form is submitted through formsubmit.</p>
+
       </Col>
-      <Col>
+      <Col lg={6} xs={12} className='contact-details'>
+      <h2 className='text-center'>Contact Details</h2>
         <p>Phone<br /><span>+91 98795 08137</span></p>
         <p>Email<br /><span>mahekramdasani@gmail.com</span></p>
         <p>Address<br /><span>Ahmedabad,Gujarat,India</span></p>
@@ -50,7 +52,7 @@ const Contact = () => {
           ))}
         </p>
       </Col>
-    </div>
+    </Row>
       
 
   );

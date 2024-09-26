@@ -24,7 +24,7 @@ const Work = () => {
           <p>{work.description}</p>
           <p><span>Skills Developed:</span> {work.skills.join(', ')}</p>
           <div style={{display: 'flex', justifyContent: 'center'}}>
-            <a href={work.link} target='_blank' rel='noreferrer' className="link btn" style={{height: '50px', width: '150px'}}>View Website</a>
+            <a href={work.link} target='_blank' rel='noreferrer' className="link btn">View Website</a>
           </div>
           <hr/>
         </div>

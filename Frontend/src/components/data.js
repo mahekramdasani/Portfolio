@@ -190,67 +190,78 @@ export const projects = [
     name:"TuneTrek",
     value:"Tune Trek is a cool music site that gives you recommendations based on what you like.",
     img:tune,
-    link:"https://github.com/mahekramdasani/TuneTrek"
+    link:"https://github.com/mahekramdasani/TuneTrek",
+    tech:"ReactJS, Django, Spotify API and NLP"
   },
   {
     name:"BookBreeze",
     value:"Bookbreeze is a library system that helps manage everything smoothly for librarians and makes things easier for library users.",
     img:book,
-    link:"https://github.com/mahekramdasani/BookBreeze"
+    link:"https://github.com/mahekramdasani/BookBreeze",
+    tech:"JAVA, Data Structures and Algorithms"
   },
   {
     name: 'DoggyDiveIn',
     value: 'DoggyDiveIn, a user-friendly website for dog lovers, showcasing full ownership and hands-on development expertise.',
     img: dog, // Add the image URL
-    link: 'https://github.com/mahekramdasani/dogwebsite', // Add the project link
+    link: 'https://github.com/mahekramdasani/dogwebsite',
+    tech:"MERN Stack" // Add the project link
   },
   {
     name: 'Trendy-Bytes',
     value: 'TrendyBytes, a captivating blog website, featuring a Django backend and React frontend, highlighting my proficiency in web development, content management, and design.',
     img: trend, // Add the image URL
     link: 'https://github.com/mahekramdasani/blog-website', // Add the project link
+    tech:"ReactJS and Django"
   },
   {
     name: 'SpaceX',
     value: 'SpaceX, launch site analysis using Python, facilitating in-depth assessment of rocket launch operations and site performance.',
     img: spa, // Add the image URL
     link: 'https://github.com/mahekramdasani/Python-projects-On-Data-Science/tree/main', // Add the project link
+    tech:"Python, Machine Learning and Data Visualization"
   },
   {
     name: 'Cinemate',
     value: 'Cinemate, a movie application built on the Django framework, offering an immersive cinematic experience for users.',
     img: movie, // Add the image URL
     link: 'https://github.com/mahekramdasani/Cinemate', // Add the project link
+    tech:"Django"
   },
   {
     name:"Maze-Craze",
     value:"A simple Java application demonstrating maze-solving algorithm using depth-first search (DFS) with graphical user interface (GUI) using Java Swing",
     img:maze,
-    link:'https://github.com/mahekramdasani/MazeGenerationAndSolver'
+    link:'https://github.com/mahekramdasani/MazeGenerationAndSolver',
+    tech:"Java, Data Structures and Algorithms"
   },
   {
     name: 'Expense Tracker',
     value: 'A user-friendly Expense Tracker application, streamlining personal finance management and enhancing financial tracking capabilities.',
     img: exp, // Add the image URL
     link: 'https://github.com/mahekramdasani/expensetracker', // Add the project link
+    tech:"Python and Tkinter"
   },
   {
     name: 'Flight Analysis',
     value: 'Comprehensive flight analysis using Python, leveraging data analytics and visualization to gain valuable insights into aviation trends and performance.',
     img: flight, // Add the image URL
     link: 'https://github.com/mahekramdasani/Python-projects-On-Data-Science/tree/main', // Add the project link
+    tech:"Python and Machine Learning"
   },
   {
     name: 'EscapeHomes',
     value: 'Escape Homes, a tourism website exclusively dedicated to promoting and showcasing the captivating beauty of Gujarat, fostering tourism and cultural appreciation.',
     img: esc, // Add the image URL
     link: 'https://github.com/mahekramdasani/tourismwebite', // Add the project link
+    tech:"HTML, CSS and JavaScript"
   },
   {
     name: 'Portfolio Website',
     value: 'Personal portfolio website showcasing my skills and projects. Built with modern web technologies to create a visually appealing and informative platform for visitors.',
     img: port, // Add the image URL
     link: 'https://github.com/mahekramdasani/Portfolio', // Add the project link
+    tech:"ReactJS"
   },
   
 ];

@@ -10,7 +10,9 @@ const About = () => {
             <span>Code Enthusiast:</span> Simple, Strong, and Curious
           </h2>
         <Row>
-          
+        <Col md={4}>
+            <img src={me} className="w-75" />
+          </Col>
           <Col md={8}>
             {about_data.map((data) => {
               return (
@@ -23,9 +25,7 @@ const About = () => {
               );
             })}
           </Col>
-          <Col md={4}>
-            <img src={me} className="w-75" />
-          </Col>
+          
         </Row>
       </div>
     </>

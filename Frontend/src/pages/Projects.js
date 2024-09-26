@@ -11,7 +11,7 @@ const Projects = () => {
       {
         projects.map((project, index) => (
             <Col key={index}>
-              <MyCard name={project.name} imageUrl={project.img} description={project.value} link={project.link}/>
+              <MyCard name={project.name} imageUrl={project.img} tech={project.tech} description={project.value} link={project.link}/>
             </Col>
         ))
       }
