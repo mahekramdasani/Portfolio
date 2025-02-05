@@ -12,7 +12,6 @@ import { MdOutlineRocketLaunch } from "react-icons/md";
 
 
 //Skills Page imports
-import Arduino from "../images/skills/arduino.png";
 import Bootstrap from "../images/skills/bootstrap.png";
 import Css from "../images/skills/css.png";
 import Dj from "../images/skills/dj.png";
@@ -27,7 +26,6 @@ import Js from "../images/skills/js.png"
 import Mongo from "../images/skills/mongo.png"
 import My from "../images/skills/my.png"
 import Node from "../images/skills/node.png"
-import Opencv from "../images/skills/opencv.png"
 import Oracle from "../images/skills/oracle.png"
 import Pandas from "../images/skills/pandas.png"
 import Pug from "../images/skills/pug.png"
@@ -37,6 +35,7 @@ import Seaborn from "../images/skills/seaborn.png"
 import Sqlite from "../images/skills/sqlite.png"
 import Php from "../images/skills/php.png"
 import Flask from "../images/skills/flask.png"
+import FastApi from "../images/skills/fastapi.jpg"
 
 import DsAnalysis from "../images/certificates/analysis.png"
 import Cfor from "../images/certificates/C.png"
@@ -64,6 +63,7 @@ import dog from "../images/Projects/dog.jpg"
 import tune from "../images/Projects/tune.png"
 import book from "../images/Projects/book.jpeg"
 import maze from "../images/Projects/maze.jpg"
+import bookm from "../images/Projects/bookm.jpg"
 import esc from "../images/Projects/esc.jpg"
 import exp from "../images/Projects/exp.jpg"
 import flight from "../images/Projects/flight.jpg"
@@ -143,6 +143,7 @@ export const skillsArray = [
 { name: "React()</>", img: React },
 { name: "Dj::Model", img: Dj },
 {name:"Flask@route", img:Flask},
+{name:"FastApi/{}",img:FastApi},
 {name:"<?PHP?>", img:Php},
 { name: "MongoDB{}->", img: Mongo },
 { name: "SQLite.db", img: Sqlite },
@@ -151,11 +152,9 @@ export const skillsArray = [
 { name: "Node.js()", img: Node },
 { name: "Express('/')", img: Express },
 { name: "Firebase{}", img: Firebase },
-{ name: "OpenCV(Mat)", img: Opencv },
 { name: "Pandas.df", img: Pandas },
 { name: "SciPy.func()", img: Sci },
 { name: "Sns.plot()", img: Seaborn },
-{ name: "Arduino.loop()", img: Arduino },
 { name: "Git.commit()", img: Git },
 
 ]
@@ -236,6 +235,13 @@ export const projects = [
     tech:"Java, Data Structures and Algorithms"
   },
   {
+    name:"BookMarked",
+    value:"Bookmarked is a smart bookmarking app that helps you save, organize, and access your favorite links effortlessly.",
+    img:bookm,
+    link:'https://github.com/mahekramdasani/bookmarked',
+    tech:"React, MySQL"
+  },
+  {
     name: 'Expense Tracker',
     value: 'A user-friendly Expense Tracker application, streamlining personal finance management and enhancing financial tracking capabilities.',
     img: exp, // Add the image URL
@@ -269,13 +275,14 @@ export const projects = [
 export const workData = [
   {
     name: "Aktiv Software",
-    img: aktiv, // Add relevant image for Aktiv Software
+    img: aktiv, 
     role: "Software Engineer Intern",
     description: "Acquired in-depth training in Odoo and Python, leveraging this knowledge in real-world applications to improve ERP system efficiency. Enhanced analytical and technical skills by working on Odoo applications and Python programming.",
     skills: ["Odoo", "Python", "ERP Systems", "XML", "Problem-Solving"],
     link: "https://aktivsoftware.com/",
-    joinDate: "JUN 2024",
-    current: "YES"
+    joinDate: "06/2024",
+    current: "No",
+    endDate: "09/2024",
 },
   {
       name: "Origin Konnect",
@@ -284,9 +291,9 @@ export const workData = [
       description: "Led a compliance team in managing export data using Flask and React, implementing data scraping solutions that enhanced company growth by one-third. Collaborated with mentors to improve data analytics performance and website functionality in a month by developing data solutions using PHP. Managed export data and converted CTL files to SQL for server uploads.",
       skills: ["Python", "Flask", "React", "PHP", "JavaScript", "SQL", "Web Scraping", "Data Analytics", "Leadership"],
       link: "https://originkonnect.in/",
-      joinDate: "JAN 2024",
+      joinDate: "01/2024",
       current: "No",
-      endDate: "APR 2024"
+      endDate: "04/2024"
   },
   
 ];
